@@ -1,9 +1,3 @@
-# **Amp Software**
-
-Welcome to the main website for Amp Software
-
-This page is currently under development and is subject to change.
-
 ## **Software**
 ### [Reminders](https://play.google.com/store/apps/details?id=com.ampsoft.notifier) (Android Notifier)
 Introducing Reminders, the ultimate reminder app designed to keep your life on track with unparalleled ease. Whether it's a crucial appointment, a daily task, or a special occasion, our intuitive user interface makes creating and managing reminders a breeze.
