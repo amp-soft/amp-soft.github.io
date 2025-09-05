@@ -15,6 +15,8 @@ Reminders is your go-to companion for staying organized, boosting productivity, 
 * For personal productivity purposes only.
 * [Privacy Policy](./android_notifier/privacy.md)
 
+---
+
 ### [Aura Dream AI](https://play.google.com/store/apps/details?id=com.ampsoft.dreamjournal) (Dream Journal)
 #### Private Insights into Your Subconscious
 Journal your dreams and let AI reveal symbolic meanings and emotional themes. Discover a deeper understanding of your mind with the ultimate private dream journal.
