@@ -1,7 +1,22 @@
 {
   "name": "amp-soft.github.io",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Amp Software Website",
+  "homepage": "https://amp-soft.github.io/",
+  "bugs": {
+    "url": "https://github.com/amp-soft/feedback/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amp-soft/amp-soft.github.io.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Aaron Palmer",
+    "email": "aaron.ampsoft@gmail.com",
+    "url": "https://github.com/aaron-ampsoft"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,12 +25,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "framer-motion": "^12.34.0",
+    "lucide-react": "^0.564.0",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.13.0",
+    "tailwindcss": "^4.1.18",
+    "terser": "^5.46.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
-    "@types/node": "^24.10.1",
+    "@types/node": "^24.10.13",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
