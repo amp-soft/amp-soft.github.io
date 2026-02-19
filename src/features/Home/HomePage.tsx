@@ -84,7 +84,7 @@ const software = [
       'Users should consult a qualified healthcare professional for any health concerns.',
       'Not intended to diagnose, treat, cure, or prevent any disease or medical condition.',
     ],
-    privacyPath: '/privacy/auradream'
+    privacyPath: '#/privacy/auradream'
   },
   {
     title: 'Reminders',
@@ -116,7 +116,7 @@ const software = [
     disclaimers: [
       'For personal productivity purposes only.',
     ],
-    privacyPath: '/privacy/reminders'
+    privacyPath: '#/privacy/reminders'
   },
 ];
 
