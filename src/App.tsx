@@ -1,7 +1,7 @@
-import './App.css'
-import { ErrorBoundary } from '@/shared/components'
-import { AppProviders } from './AppProviders'
-import { AppRouter } from './AppRouter'
+import './App.css';
+import { ErrorBoundary } from '@/shared/components';
+import { AppProviders } from './AppProviders';
+import { AppRouter } from './AppRouter';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <AppRouter />
       </AppProviders>
     </ErrorBoundary>
-  )
-}
+  );
+};
 
-export default App
+export default App;

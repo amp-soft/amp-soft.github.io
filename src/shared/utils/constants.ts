@@ -33,8 +33,8 @@ export const FORM_CONFIG = {
 
 // Application metadata
 export const APP_CONFIG = {
-  NAME: 'Amp Software',
-  DESCRIPTION: 'Your life, simplified and secure. Our apps use local AI to boost productivity and provide private insights.',
+  NAME: 'Amp Software Website',
+  DESCRIPTION: 'Your life, simplified and secure. Our apps use local-first AI to boost productivity and provide private insights.',
   VERSION: '1.0.0',
   AUTHOR: 'Aaron Palmer',
   REPOSITORY: 'https://github.com/amp-soft/amp-soft.github.io'
