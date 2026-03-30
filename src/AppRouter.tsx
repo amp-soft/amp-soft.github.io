@@ -3,6 +3,7 @@ import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from '@/features/Home/HomePage';
 import NotFoundPage from '@/features/NotFound/NotFoundPage';
 import AuraDreamPrivacyPage from '@/features/Privacy/AuraDreamPrivacyPage';
+import PureArtPrivacyPage from '@/features/Privacy/PureArtPrivacyPage';
 import RemindersPrivacyPage from '@/features/Privacy/RemindersPrivacyPage';
 
 const ScrollToTop = () => {
@@ -22,6 +23,7 @@ export const AppRouter = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/privacy/auradream" element={<AuraDreamPrivacyPage />} />
+        <Route path="/privacy/pureart" element={<PureArtPrivacyPage />} />
         <Route path="/privacy/reminders" element={<RemindersPrivacyPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
