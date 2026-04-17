@@ -161,12 +161,12 @@ const footer = {
       url: 'https://ai.google.dev/edge',
     },
     {
-      name: 'Gemma 3',
+      name: 'Gemma',
       url: 'https://ai.google.dev/gemma/docs/core',
     },
     {
-      name: 'BigScience',
-      url: 'https://bigscience.huggingface.co/',
+      name: 'Hugging Face',
+      url: 'https://huggingface.co/huggingface',
     },
   ]
 };
