@@ -39,11 +39,11 @@ const Dialog = ({ open, onOpenChange, children }: DialogProps) => {
 
 const DialogContent = forwardRef<HTMLDivElement, DialogContentProps>(
   ({ className, children, onClose, ...props }, ref) => (
-    <div className="fixed left-1/2 top-1/2 z-50 -translate-x-1/2 -translate-y-1/2">
+    <div className="fixed left-1/2 top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 w-full md:max-w-3/4 lg:max-w-1/2">
       <motion.div
         ref={ref}
         className={[
-          'grid w-full max-w-lg gap-4 border border-border-primary bg-background-card p-6 shadow-lg rounded-lg',
+          'grid w-full gap-4 border border-border-primary bg-background-card p-6 shadow-lg rounded-lg',
           className
         ]
           .filter(Boolean)

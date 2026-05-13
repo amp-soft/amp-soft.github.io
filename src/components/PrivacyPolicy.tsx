@@ -42,13 +42,11 @@ function PrivacyPolicy({data, className, ...props } : PrivacyPolicyProps) {
           <span>{data.appName}</span>
         </CardTitle>
         <CardDescription>
-          <article>
-            This privacy policy applies to the {data.appName} app (hereby referred to as “Application”) for mobile devices that was
-            created by {data.company} (hereby referred to as “Service Provider”) as an Ad Supported service. This service is intended
-            for use “AS IS”.
-            <Separator className='my-4' />
-          </article>
+          This privacy policy applies to the {data.appName} app (hereby referred to as “Application”) for mobile devices that was
+          created by {data.company} (hereby referred to as “Service Provider”) as an Ad Supported service. This service is intended
+          for use “AS IS”.
         </CardDescription>
+        <Separator className='my-4' />
       </CardHeader>
       <CardContent className="space-y-3">
         <div className="pb-1">
