@@ -26,12 +26,13 @@
 
     /* Paths */
     "paths": {
-      //"@/*": ["src/*"],
+      //"@/*": ["./src/*"],
       "@/features/*": ["./src/features/*"],
       "@/shared/*": ["./src/shared/*"],
       "@assets/*": ["./src/assets/*"],
       "@components/*": ["./src/components/*"],
       "@utils/*": ["./src/utils/*"],
+      "@test/*": ["./src/test/*"],
     }
   },
   "include": ["src"]

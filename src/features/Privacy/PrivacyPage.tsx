@@ -6,12 +6,13 @@ import { ArrowLeft, Home } from 'lucide-react';
 import { PrivacyPolicy, type PrivacyPolicyData } from '@components/PrivacyPolicy';
 import { Button } from '@/shared/components/ui/Button';
 import CompanyHeader from '@components/CompanyHeader';
+import { PRIVACYPAGE_TEST_ID } from '@test/constants';
 
 function PrivacyPage(data: PrivacyPolicyData) {
   return (
     <div className="min-h-screen bg-background-primary text-text-primary antialiased">
       {/* Company Section */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden" data-testid={PRIVACYPAGE_TEST_ID.COMPANY_SECTION}>
         <div className="absolute inset-0 bg-linear-to-br from-accent-primary/10 to-accent-secondary/10"></div>
         <div className="relative container mx-auto px-4 py-16 sm:py-20">
           <motion.div
@@ -26,7 +27,7 @@ function PrivacyPage(data: PrivacyPolicyData) {
       </section>
 
       {/* Privacy Section */}
-      <section className="py-8">
+      <section className="py-8" data-testid={PRIVACYPAGE_TEST_ID.PRIVACY_SECTION}>
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-8"
@@ -54,7 +55,7 @@ function PrivacyPage(data: PrivacyPolicyData) {
       </section>
 
       {/* Footer Section */}
-      <section className="py-8">
+      <section className="py-8" data-testid={PRIVACYPAGE_TEST_ID.FOOTER_SECTION}>
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

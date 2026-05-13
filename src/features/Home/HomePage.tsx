@@ -40,6 +40,7 @@ import AuraDreamIcon from '@components/AuraDreamIcon';
 import PureArtIcon from '@components/PureArtIcon';
 import RemindersIcon from '@components/RemindersIcon';
 import { COMPANY } from '@utils/constants';
+import { HOMEPAGE_TEST_ID } from '@test/constants'
 
 const mission = {
   title: 'Your Creativity, Your Privacy',
@@ -238,10 +239,10 @@ function HomePage() {
   const [dialogType, setDialogType] = useState<AppDialogType>();
 
   const handleDialogOpen = (app: AppData, dialogType: AppDialogType) => {
-    setDialogApp(app)
-    setDialogType(dialogType)
-    setIsDialogOpen(true)
-  }
+    setDialogApp(app);
+    setDialogType(dialogType);
+    setIsDialogOpen(true);
+  };
 
   const handleDialogClose = (open: boolean) => {
     setIsDialogOpen(open);
@@ -250,7 +251,7 @@ function HomePage() {
   return (
     <div className="min-h-screen bg-background-primary text-text-primary antialiased">
       {/* Company Section */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden" data-testid={HOMEPAGE_TEST_ID.COMPANY_SECTION}>
         <div className="absolute inset-0 bg-linear-to-br from-accent-primary/10 to-accent-secondary/10"></div>
         <div className="relative container mx-auto px-4 py-16 sm:py-20">
           <motion.div
@@ -265,7 +266,7 @@ function HomePage() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-8 bg-background-secondary">
+      <section className="py-8 bg-background-secondary" data-testid={HOMEPAGE_TEST_ID.MISSION_SECTION}>
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-12"
@@ -310,7 +311,7 @@ function HomePage() {
       </section>
 
       {/* Software Section */}
-      <section className="py-16">
+      <section className="py-16" data-testid={HOMEPAGE_TEST_ID.SOFTWARE_SECTION}>
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-12"
@@ -389,7 +390,7 @@ function HomePage() {
       </section>
 
       {/* Highlights Section */}
-      <section className="py-16 bg-background-secondary">
+      <section className="py-16 bg-background-secondary" data-testid={HOMEPAGE_TEST_ID.HIGHLIGHTS_SECTION}>
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {highlights.map((highlight, index) => (
@@ -418,7 +419,7 @@ function HomePage() {
       </section>
 
       {/* Footer Section */}
-      <section className="py-16">
+      <section className="py-16" data-testid={HOMEPAGE_TEST_ID.FOOTER_SECTION}>
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -478,6 +479,9 @@ function HomePage() {
             <DialogTitle>
               <span>{dialogApp?.title}</span>
             </DialogTitle>
+            {/*<DialogDescription className="py-2">             
+              dialogApp?.description
+            </DialogDescription>*/}
           </DialogHeader>
 
           {dialogType === AppDialogType.Features && (

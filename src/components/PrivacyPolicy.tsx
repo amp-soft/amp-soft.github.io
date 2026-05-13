@@ -11,6 +11,8 @@ import {
 } from '@/shared/components/ui/Card';
 import { Separator } from '@/shared/components/ui/Separator';
 
+import { PRIVACYPOLICY_TEST_ID } from '@test/constants';
+
 interface PrivacyPolicyData {
     company: string,
     appName: string,
@@ -51,7 +53,7 @@ function PrivacyPolicy({data, className, ...props } : PrivacyPolicyProps) {
       <CardContent className="space-y-3">
         <div className="pb-1">
           {/* Data Collection Policy */}
-          <section className="mb-3">
+          <section className="mb-3" data-testid={PRIVACYPOLICY_TEST_ID.DATA_COLLECTION_POLICY}>
             <h2 className="text-xl text-text-primary mb-2">
               Information Collection and Use
             </h2>
@@ -69,7 +71,7 @@ function PrivacyPolicy({data, className, ...props } : PrivacyPolicyProps) {
             <Separator className='my-4' />
           </section>
           {/* Third Party Policy */}
-          <section className="mb-3">
+          <section className="mb-3" data-testid={PRIVACYPOLICY_TEST_ID.THIRD_PARTY_POLICY}>
             <h2 className="text-xl text-text-primary mb-2">
               Third Party Access
             </h2>
@@ -104,7 +106,7 @@ function PrivacyPolicy({data, className, ...props } : PrivacyPolicyProps) {
             <Separator className='my-4' />
           </section>
           {/* Opt-Out Policy */}
-          <section className="mb-3">
+          <section className="mb-3" data-testid={PRIVACYPOLICY_TEST_ID.OPT_OUT_POLICY}>
             <h2 className="text-xl text-text-primary mb-2">
               Opt-Out Rights
             </h2>
@@ -115,7 +117,7 @@ function PrivacyPolicy({data, className, ...props } : PrivacyPolicyProps) {
             <Separator className='my-4' />
           </section>
           {/* Children Policy */}
-          <section className="mb-3">
+          <section className="mb-3" data-testid={PRIVACYPOLICY_TEST_ID.CHILDREN_POLICY}>
             <h2 className="text-xl text-text-primary mb-2">
               Children
             </h2>
@@ -130,7 +132,7 @@ function PrivacyPolicy({data, className, ...props } : PrivacyPolicyProps) {
             <Separator className='my-4' />
           </section>
           {/* Security Policy */}
-          <section className="mb-3">
+          <section className="mb-3" data-testid={PRIVACYPOLICY_TEST_ID.SECURITY_POLICY}>
             <h2 className="text-xl text-text-primary mb-2">
               Security
             </h2>
@@ -141,7 +143,7 @@ function PrivacyPolicy({data, className, ...props } : PrivacyPolicyProps) {
             <Separator className='my-4' />
           </section>
           {/* Changes Policy */}
-          <section className="mb-3">
+          <section className="mb-3" data-testid={PRIVACYPOLICY_TEST_ID.CHANGES_POLICY}>
             <h2 className="text-xl text-text-primary mb-2">
               Changes
             </h2>
@@ -156,7 +158,7 @@ function PrivacyPolicy({data, className, ...props } : PrivacyPolicyProps) {
             <Separator className='my-4' />
           </section>
           {/* Consent Policy */}
-          <section className="mb-3">
+          <section className="mb-3" data-testid={PRIVACYPOLICY_TEST_ID.CONSENT_POLICY}>
             <h2 className="text-xl text-text-primary mb-2">
               Your Consent
             </h2>
@@ -167,7 +169,7 @@ function PrivacyPolicy({data, className, ...props } : PrivacyPolicyProps) {
             <Separator className='my-4' />
           </section>
           {/* Contact */}
-          <section className="mb-3">
+          <section className="mb-3" data-testid={PRIVACYPOLICY_TEST_ID.CONTACT_SECTION}>
             <h2 className="text-xl text-text-primary mb-2">
               Contact Us
             </h2>
