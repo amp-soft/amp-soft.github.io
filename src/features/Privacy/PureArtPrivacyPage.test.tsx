@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
-import { MemoryRouter } from 'react-router-dom';
+import { MemoryRouter } from 'react-router';
 import { describe, test, expect, beforeEach } from 'vitest';
 
 import PrivacyPage from './PureArtPrivacyPage';

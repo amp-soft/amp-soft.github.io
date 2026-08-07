@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router';
 import HomePage from '@/features/Home/HomePage';
 import NotFoundPage from '@/features/NotFound/NotFoundPage';
 import AuraDreamPrivacyPage from '@/features/Privacy/AuraDreamPrivacyPage';
