@@ -220,7 +220,7 @@ const footer = {
   techStack: [
     {
       name: 'Google AI Edge',
-      url: 'https://ai.google.dev/edge',
+      url: 'https://developers.google.com/edge',
     },
     {
       name: 'Gemma',
