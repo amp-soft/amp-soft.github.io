@@ -4,6 +4,20 @@ export const HOMEPAGE_TEST_ID = {
   SOFTWARE_SECTION: 'software-section',
   HIGHLIGHTS_SECTION: 'highlights-section',
   FOOTER_SECTION: 'footer-section',
+
+  APP_PUREART_SECTION: 'app-pureart-section',
+  APP_AURADREAM_SECTION: 'app-auradream-section',
+  APP_REMINDERS_SECTION: 'app-reminders-section',
+
+  APP_FEATURES_BUTTON: 'app-features-button',
+  APP_DISCLAIMERS_BUTTON: 'app-disclaimers-button',
+  APP_PRIVACY_BUTTON: 'app-privacy-button',
+  APP_GOOGLE_PLAY_BUTTON: 'app-google-play-button',
+
+  FOOTER_GOOGLE_PLAY_BUTTON: 'footer-google-play-button',
+  FOOTER_GITHUB_BUTTON: 'footer-github-button',
+
+  DIALOG_CLOSE_BUTTON: 'dialog-close-button',
 } as const;
 
 export const HomePageTestIds: Array<string> = [
